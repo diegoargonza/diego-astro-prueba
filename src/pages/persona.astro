@@ -1,4 +1,5 @@
 ---
+
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 
@@ -11,11 +12,9 @@ import '../styles/global.css';
             <img  class ="w-60 h-20 p-2 " src="http://132.248.63.171/PAGINAS_P/assets/UNAMhead-Q3AiFNSJ.png">
             <h1 class=" text-2xl text-white mt-5">Páginas personales UNAM</h1>
     </header>
-
-    <div class="bg-gray-300">
         <div class="flex  bg-white"> 
-            <div class="flex flex-col bg-indigo-300 min-h-screen w-70 mx-30 p-6">
-                <img class=" w-30 h-30 rounded-lg mx-auto" src="https://th.bing.com/th/id/R.550782073272bfb7704aa3bd4f7211e1?rik=4CpXpISCYNkzNQ&pid=ImgRaw&r=0">
+            <div class="flex flex-col bg-indigo-300 min-h-screen w-80 mx-30 p-6 mr-8">
+                <img class=" w-30 h-30 rounded-lg mx-auto mt-10" src="https://th.bing.com/th/id/R.550782073272bfb7704aa3bd4f7211e1?rik=4CpXpISCYNkzNQ&pid=ImgRaw&r=0">
                 <div>
                     <ul class="mt-4">
                         <li class="mb-4 hover:bg-indigo-400 p-2 text-indigo-800">Datos generales</li><hr class="border-white">
@@ -28,35 +27,78 @@ import '../styles/global.css';
                 </div>
             </div>
 
-            <section class="mt-4">
-                <h1 class="text-indigo-800 text-4xl">Juan Pérez Pérez</h1>
-                    <div>
-                        <h2>Datos de Contacto</h2>
-                        <form>
-                            <div class="mb-3 flex felx-col">
-                                <label class="nombre  text-gray-700">Nombre</label>
-                                <input type="text" class="border border-gray-300  rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300" id="nombre" >
+            <section class="mt-4 p-3">
+                <h1 class="text-indigo-800 text-4xl mt-8">Juan Pérez Pérez</h1>
+                <h2 class="border p-2 mt-4 text-white bg-indigo-800 rounded-md  text-2xl font-blod ">Datos de Contacto</h2>
+                    
+                <div class=" h-auto mx-auto shadow.lg mt-3">
+                        <form class="grid grid-cols-6 gap-3 w-200 h-full">
+                            
+                            <div class="col-span-6">
+                                <label class="text-gray-700">Nombre(s)</label>
+                                <input type="text" class="w-full border h-8 border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
                             </div>
 
-                            <div class="mb-3 flex felx-col">
-                                <label class="nombre  text-gray-700">Primer Apellido </label>
-                                <input type="text" class="border border-gray-300  rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300" id="nombre" >
+                            <div class="col-span-3">
+                                <label class="text-gray-700">Primer Apellido</label>
+                                <input type="text" class="w-full border h-8 border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
                             </div>
 
 
-                            <div class="mb-3 flex felx-col">
-                                <label class="nombre  text-gray-700">Segundo Apellido</label>
-                                <input type="text" class="border border-gray-300  rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300" id="nombre" >
+                            <div class="col-span-3">
+                                <label class="text-gray-700">Segundo Apellido</label>
+                                <input type="text" class="w-full  h-8 border border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
                             </div>
-                        
+                
+                         
+                            <div class="col-span-3">
+                                <label class="text-gray-700">Grado/Título </label>
+                                <input type="text" class="w-full h-8 border border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            </div>
+                
+             
+                            <div class="col-span-3">
+                                <label class="text-gray-700">Área Universitaria</label>
+                                <input type="text" class="w-full  h-8 border border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            </div>
+                
+                    
+                            <div class="col-span-2">
+                                <label class="text-gray-700">Rol/Puesto</label>
+                                <input type="text" class="w-full h-8 border border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            </div>
+                
+                           
+                            <div class="col-span-2">
+                                <label class="text-gray-700">Teléfono</label>
+                                <input type="text" class="w-full h-8 border border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            </div>
+                
+                          
+                            <div class="col-span-2">
+                                <label class="text-gray-700">Correo electrónico</label>
+                                <input type="text" class="w-full h-8 border border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            </div>
+                           
+                            <div class="col-span-6">
+                                <label class="text-gray-700">Otro contacto</label>
+                                <input type="text" class="w-full  h-8 border border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            </div>
+                
+                           
+                            <div class="col-span-6">
+                                <label class="text-gray-700">Información adicional</label>
+                                <input type="text" class="w-full h-8 border border-indigo-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            </div>
                         </form>
                     </div>
-                    <button  class="bg-blue-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400" type="button"><a href="">Actualizar Imagen</a></button>
-                    <button  class="bg-gray-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400" type="button"><a href="">Cancelar</a></button>
-        
+
+                    <div class="flex justify-center gap-4  mt-3">
+                        <button  class="bg-blue-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400" type="button"><a href="">Actualizar Imagen</a></button>
+                        <button  class="bg-gray-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400" type="button"><a href="">Cancelar</a></button>    
+                    </div>
             </section>
         </div>
-    </div>
 	
     
 
