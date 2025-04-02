@@ -7,41 +7,60 @@ import '../styles/global.css';
 ---
 
 <Layout>
-    <header class="flex justify-between px-30 bg-indigo-300 p-2">
+    <header class="flex justify-between px-30 bg-indigo-800 p-2">
             <img  class ="w-60 h-20 p-2 " src="http://132.248.63.171/PAGINAS_P/assets/UNAMhead-Q3AiFNSJ.png">
             <h1 class=" text-2xl text-white mt-5">Páginas personales UNAM</h1>
     </header>
 
-    <div class="flex">
-        <div class="flex flex-col bg-indigo-200 min-h-screen w-65 mx-30 p-6">
-            <img class="border w-30 h-30 rounded-lg mx-auto" src="https://th.bing.com/th/id/R.550782073272bfb7704aa3bd4f7211e1?rik=4CpXpISCYNkzNQ&pid=ImgRaw&r=0">
-            <div>
-                <ul class="mt-4">
-                    <li class="flex mb-3">Datos generales</li><hr>
-                    <li class=" mb-3">Curriculum/Semblanza</li><hr>
-                    <li class=" mb-3">Documentos</li><hr>
-                    <li class=" mb-3">Ligas de Interés</li><hr>
-                    <li class=" mb-3">Publicaciones</li><hr>
-                    <li class=" mb-3">Asignaturas que imparte el profesor</li><hr>
-                </ul>
+    <div class="bg-gray-300">
+        <div class="flex  bg-white"> 
+            <div class="flex flex-col bg-indigo-300 min-h-screen w-70 mx-30 p-6">
+                <img class=" w-30 h-30 rounded-lg mx-auto" src="https://th.bing.com/th/id/R.550782073272bfb7704aa3bd4f7211e1?rik=4CpXpISCYNkzNQ&pid=ImgRaw&r=0">
+                <div>
+                    <ul class="mt-4">
+                        <li class="mb-4 hover:bg-indigo-400 p-2 text-indigo-800">Datos generales</li><hr class="border-white">
+                        <li class="mb-4 hover:bg-indigo-400 p-2 text-indigo-800">Curriculum/Semblanza</li><hr class="border-white">
+                        <li class="mb-4 hover:bg-indigo-400 p-2 text-indigo-800">Documentos</li><hr class="border-white">
+                        <li class="mb-4 hover:bg-indigo-400 p-2 text-indigo-800">Ligas de Interés</li><hr class="border-white">
+                        <li class="mb-4 hover:bg-indigo-400 p-2 text-indigo-800">Publicaciones</li><hr class="border-white">
+                        <li class="mb-4 hover:bg-indigo-400 p-2 text-indigo-800">Asignaturas que imparte el profesor</li><hr class="border-white">
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <section class="mt-4">
-            <h1 class="">Imagen</h1>
-            <p>Seleccione la fotografía o imagen que desea se despliegue en su perfil y en el listado del personal académico dentro del sitio:</p>
-            <div>
-                <img class="border w-30 h-30 rounded-lg mx-auto" src="https://th.bing.com/th/id/R.550782073272bfb7704aa3bd4f7211e1?rik=4CpXpISCYNkzNQ&pid=ImgRaw&r=0">
-                <button  class="border" type="button"><a href="">Actualizar Imagen</a></button>
-                <button  class="border" type="button"><a href="">Cancelar</a></button>
-            </div>
-    
-        </section>
+            <section class="mt-4">
+                <h1 class="text-indigo-800 text-4xl">Juan Pérez Pérez</h1>
+                    <div>
+                        <h2>Datos de Contacto</h2>
+                        <form>
+                            <div class="mb-3 flex felx-col">
+                                <label class="nombre  text-gray-700">Nombre</label>
+                                <input type="text" class="border border-gray-300  rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300" id="nombre" >
+                            </div>
+
+                            <div class="mb-3 flex felx-col">
+                                <label class="nombre  text-gray-700">Primer Apellido </label>
+                                <input type="text" class="border border-gray-300  rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300" id="nombre" >
+                            </div>
+
+
+                            <div class="mb-3 flex felx-col">
+                                <label class="nombre  text-gray-700">Segundo Apellido</label>
+                                <input type="text" class="border border-gray-300  rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300" id="nombre" >
+                            </div>
+                        
+                        </form>
+                    </div>
+                    <button  class="bg-blue-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400" type="button"><a href="">Actualizar Imagen</a></button>
+                    <button  class="bg-gray-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400" type="button"><a href="">Cancelar</a></button>
+        
+            </section>
+        </div>
     </div>
 	
     
 
-    <footer class="text-center bg-indigo-300 p-5 px-30">
+    <footer class="text-center bg-indigo-800 p-5 px-30 text-white">
         <p>Páginas Personales UNAM 2024</p>
     </footer>
 </Layout>
